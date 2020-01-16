@@ -13,3 +13,4 @@ chmod 777 /usr/local/bin/send_queues.sh
 chmod +x /usr/local/bin/send_queues.sh
 /etc/init.d/supervisord start
 chkconfig supervisord on
+ln -f -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
