@@ -6,9 +6,9 @@ wget https://raw.githubusercontent.com/gunnytian/kerio/master/scripts/send_queue
 echo "Nhap URL"
 read URL
 sed -i 's/URL=nhanhoa.com/URL='$URL'/g' /usr/local/bin/send_queues.sh
-echo "Nhap ip"
-read IP
-sed -i 's/IP=8.8.8.8/IP='$IP'/g' /usr/local/bin/send_queues.sh
+echo "Nhap Thoi Gian Canh Bao"
+read TIMEALARM
+sed -i 's/TIMEALARM=10:10/TIMEALARM='$TIMEALARM'/g' /usr/local/bin/send_queues.sh
 chmod 777 /usr/local/bin/send_queues.sh
 chmod +x /usr/local/bin/send_queues.sh
 /etc/init.d/supervisord start

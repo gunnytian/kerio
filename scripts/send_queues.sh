@@ -1,9 +1,10 @@
 TIME=60
+TIMEALARM=
 SPEC_TIME=(07:30)
 CHAT_ID=-396514054
 TOKEN=927664773:AAETira7j7HuXIJK60ZN2cTMfPmCeNMHPCk
 URL=nhanhoa.com
-IP=8.8.8.8
+IP=`curl ifconfig.me`
 crit=100
 while true
 do
