@@ -2,6 +2,7 @@ cat << EOF >> /etc/supervisord.conf
 [program:queue]
 command=bash /usr/local/bin/send_queues.sh
 EOF
+ln -f -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
 wget https://raw.githubusercontent.com/gunnytian/kerio/master/scripts/send_queues.sh -O /usr/local/bin/send_queues.sh
 echo "Nhap URL"
 read URL
@@ -13,4 +14,4 @@ chmod 777 /usr/local/bin/send_queues.sh
 chmod +x /usr/local/bin/send_queues.sh
 /etc/init.d/supervisord start
 chkconfig supervisord on
-ln -f -s /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
+
